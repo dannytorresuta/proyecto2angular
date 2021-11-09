@@ -283,12 +283,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td class="txt-oflo">{{ this.ventas[0].nombre }}</td>
-                                            <td> {{ this.ventas[0].estado }} </td>
-                                            <td class="txt-oflo"> {{ this.ventas[0].fecha }} </td>
-                                            <td><span class="text-success"> {{ this.ventas[0].precio }} </span></td>
+                                        <tr *ngFor="let venta of ventas; index as i">
+                                            <td>{{i+1}}</td>
+                                            <td class="txt-oflo">{{ venta.nombre }}</td>
+                                            <td> {{ venta.estado }} </td>
+                                            <td class="txt-oflo"> {{ venta.fecha }} </td>
+                                            <td><span class="text-success"> {{ venta.precio }} </span></td>
                                         </tr>
                                       
                                     </tbody>
