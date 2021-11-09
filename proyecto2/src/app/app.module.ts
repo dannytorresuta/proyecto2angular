@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+//Rutas
+import { APP_ROUTING } from './app.routes'; 
 
+//Servicios
+import { DashboardService } from './servicios/dashboard.service';
+
+//Componentes
 import { AppComponent } from './app.component';
 import { BasicTableComponent } from './basic-table/basic-table.component';
 import { BlankComponent } from './blank/blank.component';
@@ -20,9 +26,13 @@ import { ProfileComponent } from './profile/profile.component';
     ProfileComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    DashboardService
+  ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
