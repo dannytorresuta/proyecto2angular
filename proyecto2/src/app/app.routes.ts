@@ -27,4 +27,4 @@ const APP_ROUTES: Routes = [
     exports: [RouterModule]
 })
 */
-export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);;
+export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
