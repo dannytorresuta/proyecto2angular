@@ -7,7 +7,9 @@ import { ProfileComponent } from  './profile/profile.component';
 import { BasicTableComponent } from './basic-table/basic-table.component';
 import { BlankComponent } from './blank/blank.component';
 import { FontawesomeComponent } from './fontawesome/fontawesome.component'
+import { Error404Component } from './error404/error404.component'
 import { MapGoogleComponent } from './map-google/map-google.component'
+
 
 
 const APP_ROUTES: Routes = [
@@ -17,6 +19,7 @@ const APP_ROUTES: Routes = [
     { path: 'blank', component: BlankComponent },
     { path:'fontawesome', component: FontawesomeComponent },
     { path: 'map-google', component: MapGoogleComponent },
+    { path: 'error404', component: Error404Component },
     { path: '**', pathMatch: 'full', redirectTo: 'dashboard' },
     
 ];
